@@ -1,0 +1,7 @@
+1. add more robustness
+-> weekday vs weekend
+-> peak vs offpeak
+-> threshold in synthetic control 
+
+2. parallel trends robustness for NYC data
+-> formally add to DiD notebook a parallel trends check

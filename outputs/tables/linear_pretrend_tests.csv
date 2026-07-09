@@ -1,0 +1,3 @@
+﻿comparison,estimate_mph_per_month,std_error,p_value,ci_low,ci_high,pre_rows,units,model
+NYC treated vs NYC controls,0.0030645313948309432,0.0020738810859754785,0.13949360609670802,-0.0010002008418998104,0.007129263631561697,9552,301,"Pre-period linear treated trend with route, month, and period FE; clustered by route"
+NYC CBD vs Boston,0.02824356156720409,0.005324475277917194,1.129959164523592e-07,0.017807781785912496,0.03867934134849568,7476,225,"Pre-period linear treated trend with unit, month, and period FE; clustered by unit"

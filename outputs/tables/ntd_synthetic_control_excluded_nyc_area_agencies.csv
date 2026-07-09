@@ -1,0 +1,17 @@
+ntd_id,Agency,UZA Name,Reporter Type,months,pre_vrm,mean_speed,agency_upper,uza_upper,excluded_nyc_area,full_window,eligible_donor
+20192,Bergen County,"New York--Jersey City--Newark, NY--NJ",Reduced Asset Reporter,5,24077.0,8.460936701719216,BERGEN COUNTY,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,False,False
+20006,City of Long Beach,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,316963.0,9.288451851406254,CITY OF LONG BEACH,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20206,County of Nassau,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,12120197.0,10.327303720719836,COUNTY OF NASSAU,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20084,County of Rockland ,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,2746097.0,18.07225142824951,COUNTY OF ROCKLAND ,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20188,MTA Bus Company,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,36802348.0,7.739949738424601,MTA BUS COMPANY,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20008,MTA New York City Transit,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,121911367.0,7.001370212536301,MTA NEW YORK CITY TRANSIT,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20078,"Metro-North Commuter Railroad Company, dba: MTA Metro-North Railroad","New York--Jersey City--Newark, NY--NJ",Full Reporter,34,170711.0,5.458411990079178,"METRO-NORTH COMMUTER RAILROAD COMPANY, DBA: MTA METRO-NORTH RAILROAD","NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20080,New Jersey Transit Corporation,"New York--Jersey City--Newark, NY--NJ",Full Reporter,33,115447913.0,14.018399668812366,NEW JERSEY TRANSIT CORPORATION,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,False,False
+20190,Port Imperial Ferry Corporation,"New York--Jersey City--Newark, NY--NJ",Full Reporter,33,566855.0,6.74330298516968,PORT IMPERIAL FERRY CORPORATION,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,False,False
+20175,Private Transportation Corporation,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,143530.0,9.505081203567148,PRIVATE TRANSPORTATION CORPORATION,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20096,Putnam County ,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,608775.0,19.49186987420987,PUTNAM COUNTY ,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20209,Somerset County,"New York--Jersey City--Newark, NY--NJ",Full Reporter,33,447031.0,19.60362916357244,SOMERSET COUNTY,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,False,False
+20072,Suffolk County ,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,11186890.0,15.989147887743647,SUFFOLK COUNTY ,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20071,Town of Huntington,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,529191.0,16.23647504569641,TOWN OF HUNTINGTON,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20076,Westchester County,"New York--Jersey City--Newark, NY--NJ",Full Reporter,34,10778177.0,10.627581827306251,WESTCHESTER COUNTY,"NEW YORK--JERSEY CITY--NEWARK, NY--NJ",True,True,False
+20018,Central New York Regional Transportation Authority,"Syracuse, NY",Full Reporter,34,5800075.0,12.14346739428599,CENTRAL NEW YORK REGIONAL TRANSPORTATION AUTHORITY,"SYRACUSE, NY",True,True,False
