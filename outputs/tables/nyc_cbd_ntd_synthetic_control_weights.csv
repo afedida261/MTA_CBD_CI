@@ -1,61 +1,36 @@
 ntd_id,Agency,UZA Name,pre_vrm,mean_speed,weight
-50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,0.4127735270925671
-90147,City of Los Angeles,"Los Angeles--Long Beach--Anaheim, CA",10495147.0,10.495747411800906,0.15869267972906856
-40041,Hillsborough Area Regional Transit Authority,"Tampa--St. Petersburg, FL",9272114.0,12.272592378586772,0.13878165205407597
-30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,0.10298863977430128
-90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,0.04164573650379687
-30083,Transportation District Commission of Hampton Roads,"Virginia Beach--Norfolk, VA",12895178.0,12.28439275530556,0.02770530626309378
-90031,Riverside Transit Agency,"Riverside--San Bernardino, CA",8769952.0,13.346782476206911,0.027344220621800516
-40018,Transit Authority of River City,"Louisville/Jefferson County, KY--IN",8831271.0,12.756813871767998,0.024904679526319643
-30075,Delaware Transit Corporation,"Philadelphia, PA--NJ--DE--MD",12768101.0,17.2073517257559,0.02402748137052559
-90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,0.022094171648759233
-40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,0.019041905415691222
-90154,Los Angeles County Metropolitan Transportation Authority ,"Los Angeles--Long Beach--Anaheim, CA",100590040.0,10.21734045540516,0.0
-10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,0.0
-50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,0.0
-30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,0.0
-00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,0.0
-50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,0.0
-90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,0.0
-90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,0.0
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,0.4263769048434438
+60048,Capital Metropolitan Transportation Authority,"Austin, TX",20467320.0,11.121250941587036,0.352262095591551
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,0.10564212829586148
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,0.03791154166213671
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,0.03624187325819251
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,0.024939308697495433
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,0.016626147651319173
+30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,0.0
 50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,0.0
-60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,0.0
+90154,Los Angeles County Metropolitan Transportation Authority ,"Los Angeles--Long Beach--Anaheim, CA",100590040.0,10.21734045540516,0.0
+30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,0.0
+50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,0.0
+10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,0.0
 00001,King County,"Seattle--Tacoma, WA",48252837.0,10.089906740845901,0.0
-80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,0.0
+60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,0.0
 60056,Dallas Area Rapid Transit,"Dallas--Fort Worth--Arlington, TX",36116257.0,12.857683703671215,0.0
 40034,County of Miami-Dade ,"Miami--Fort Lauderdale, FL",34637730.0,12.23177778743868,0.0
 40022,Metropolitan Atlanta Rapid Transit Authority,"Atlanta, GA",34330773.0,12.736242340521027,0.0
-30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,0.0
-30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,0.0
-60048,Capital Metropolitan Transportation Authority,"Austin, TX",20467320.0,11.121250941587036,0.0
+80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,0.0
+90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,0.0
+90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,0.0
+50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,0.0
+30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,0.0
+00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,0.0
+90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,0.0
+90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,0.0
+60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,0.0
 40029,Broward County Board of County Commissioners,"Miami--Fort Lauderdale, FL",20495932.0,12.245965924393385,0.0
 90013,Santa Clara Valley Transportation Authority,"San Jose, CA",22578855.0,11.398281441374023,0.0
 80001,Utah Transit Authority,"Salt Lake City, UT",23227097.0,12.111349086615643,0.0
-90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,0.0
 50008,Milwaukee County,"Milwaukee, WI",23263737.0,12.564448236536224,0.0
 90014,Alameda-Contra Costa Transit District,"San Francisco--Oakland, CA",24848623.0,9.984272496038399,0.0
-60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,0.0
-90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,0.0
-50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,0.0
-10048,Connecticut Department of Transportation - CTTRANSIT - Hartford Division,"Hartford, CT",13391238.0,12.735022191470103,0.0
-40027,Pinellas Suncoast Transit Authority,"Tampa--St. Petersburg, FL",13527051.0,13.877073603736571,0.0
-20002,Capital District Transportation Authority,"Albany--Schenectady, NY",13580732.0,12.567238346605231,0.0
+50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,0.0
 70006,Bi-State Development Agency of the Missouri-Illinois Metropolitan District,"St. Louis, MO--IL",17600213.0,13.64626142940746,0.0
 90146,Foothill Transit,"Los Angeles--Long Beach--Anaheim, CA",16553173.0,13.910516553865463,0.0
-50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,0.0
-40040,Jacksonville Transportation Authority,"Jacksonville, FL",11317286.0,13.31402048482565,0.0
-40008,City of Charlotte North Carolina,"Charlotte, NC--SC",12289162.0,13.29424267211213,0.0
-10001,Rhode Island Public Transit Authority,"Providence, RI--MA",12851319.0,14.560207540894075,0.0
-50119,City of Detroit ,"Detroit, MI",13225956.0,13.6217402473803,0.0
-90033,City of Tucson,"Tucson, AZ",10386131.0,12.211525390813051,0.0
-50050,Indianapolis and Marion County Public Transportation,"Indianapolis, IN",11201721.0,13.655985106589181,0.0
-40037,"Board of County Commissioners, Palm Beach County","Miami--Fort Lauderdale, FL",10571848.0,14.572485789662426,0.0
-90019,Sacramento Regional Transit District,"Sacramento, CA",10541786.0,11.709841991487057,0.0
-90029,Omnitrans,"Riverside--San Bernardino, CA",9802054.0,13.30908826281667,0.0
-00002,Spokane Transit Authority,"Spokane, WA",10034125.0,13.706745490542955,0.0
-20004,Niagara Frontier Transportation Authority,"Buffalo, NY",10131109.0,10.85701006220358,0.0
-40004,Metropolitan Transit Authority,"Nashville-Davidson, TN",9759540.0,12.296087500285688,0.0
-90023,Long Beach Transit,"Los Angeles--Long Beach--Anaheim, CA",9414477.0,10.004447630608555,0.0
-00029,Snohomish County Public Transportation Benefit Area Corporation,"Seattle--Tacoma, WA",9469381.0,14.221019038853044,0.0
-90009,San Mateo County Transit District,"San Francisco--Oakland, CA",9086966.0,10.468622463393178,0.0
-60007,Fort Worth Transportation Authority,"Dallas--Fort Worth--Arlington, TX",8345563.0,12.128828621465146,0.0

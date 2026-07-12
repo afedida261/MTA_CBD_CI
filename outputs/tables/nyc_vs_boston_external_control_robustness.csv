@@ -1,2 +1,2 @@
 comparison,sample,estimate_mph,std_error,p_value,ci_low,ci_high,rows,units,nyc_cbd_units,boston_units
-NYC CBD routes vs Boston routes,weekday_all_periods,0.4774229980323977,0.06208587854996955,1.474578197644526e-14,0.35573467607445736,0.599111319990338,14934,231,88,143
+NYC CBD routes vs Boston routes,weekday_all_periods,0.47744239614821027,0.06208446964739496,1.468976635794531e-14,0.35575683563931615,0.5991279566571044,14838,227,84,143

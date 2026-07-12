@@ -1,0 +1,4 @@
+﻿diagnostic,estimate,std_error,p_value,ci_low,ci_high,interpretation
+Joint pre-policy event-study leads,,,3.2554054527729506e-23,,,The joint test rejects that all pre-policy treated-control differences relative to December 2024 are zero.
+Linear differential pretrend,0.0030645313948525813,0.002073881085975444,0.1394936060939075,-0.0010002008418781038,0.007129263631583267,A coefficient near zero indicates similar average pre-period slopes.
+

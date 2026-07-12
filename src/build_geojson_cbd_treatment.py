@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 
@@ -29,6 +29,7 @@ NON_CBD_PANEL_OUTPUT = PROCESSED / "nyc_did_panel_geojson_intersection_control_r
 PROJECTED_CRS = "EPSG:2263"  # NAD83 / New York Long Island, feet.
 ANALYSIS_START = pd.Timestamp("2023-08-01")
 POLICY_MONTH = pd.Timestamp("2025-01-01")
+POLICY_DATE = pd.Timestamp("2025-01-05")
 ANALYSIS_END = pd.Timestamp("2026-05-01")
 IN_CBD_SHARE_THRESHOLD = 0.80  # Diagnostic only; treatment is any CBD intersection.
 
@@ -124,9 +125,11 @@ def filter_routes_to_window_and_outcome(
     routes: gpd.GeoDataFrame,
     route_coverage: pd.DataFrame,
 ) -> tuple[gpd.GeoDataFrame, pd.DataFrame]:
-    valid_to_for_overlap = routes["valid_to"].fillna(pd.Timestamp.max)
-    overlaps_window = routes["valid_from"].le(ANALYSIS_END) & valid_to_for_overlap.ge(ANALYSIS_START)
-    routes_window = routes.loc[overlaps_window].copy()
+    # Freeze exposure at policy onset so post-policy route changes cannot determine
+    # treatment. Open-ended shapes are treated as active through the policy date.
+    valid_to = routes["valid_to"].fillna(pd.Timestamp.max)
+    active_at_policy = routes["valid_from"].le(POLICY_DATE) & valid_to.ge(POLICY_DATE)
+    routes_window = routes.loc[active_at_policy].copy()
 
     outcome_routes = route_coverage.loc[
         route_coverage["route_in_analysis_outcome"], ["route_id", "has_non_staten_island_rows"]
@@ -229,7 +232,7 @@ def build_route_treatment(
     route_treatment["geojson_cbd_relation_inferred"] = route_treatment.apply(
         infer_route_relation, axis=1
     )
-    route_treatment["treatment_definition"] = "Any retained route shape intersects CBD geofence"
+    route_treatment["treatment_definition"] = "Any route shape active on 2025-01-05 intersects CBD geofence"
 
     ordered_columns = [
         "route_id",
@@ -424,7 +427,7 @@ def assert_quality_checks(
     pre_months = combined.loc[combined["month"].lt(POLICY_MONTH), "month"].nunique()
     post_months = combined.loc[combined["month"].ge(POLICY_MONTH), "month"].nunique()
     if pre_months != post_months:
-        raise AssertionError(f"Unbalanced window: {pre_months} pre months, {post_months} post months")
+        raise AssertionError(f"Unequal calendar window: {pre_months} pre months, {post_months} post months")
 
 
 def print_set(title: str, values: set[str]) -> None:
@@ -449,7 +452,12 @@ def print_summary(
     print(f"Analysis window: {ANALYSIS_START.date()} through {ANALYSIS_END.date()}")
     print(f"Policy month treated as post: {POLICY_MONTH.date()}")
     print(f"Pre months: {pre_months}; post months: {post_months}")
-    print("Treatment rule: cbd_route = any retained route shape intersects CBD geofence")
+    print("Treatment rule: cbd_route = any route shape active on 2025-01-05 intersects CBD geofence")
+    route_month_counts = combined.groupby("route_id")["month"].nunique()
+    print(
+        "Calendar window has equal pre/post months; route panel is not required to be balanced. "
+        f"Observed months per route range from {route_month_counts.min()} to {route_month_counts.max()}."
+    )
     print(f"Retained route shapes: {len(shape_audit):,}")
     print(f"Route treatment rows: {len(route_treatment):,}")
     print(f"CBD routes: {int(route_treatment['cbd_route'].sum()):,}")
@@ -520,4 +528,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
 

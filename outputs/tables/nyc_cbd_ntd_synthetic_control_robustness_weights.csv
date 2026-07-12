@@ -1,0 +1,246 @@
+ntd_id,Agency,UZA Name,pre_vrm,mean_speed,treatment_column,treatment_definition,weight
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.3899710469824417
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.3070951634096142
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.15888734626742462
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.05588704390435915
+40027,Pinellas Suncoast Transit Authority,"Tampa--St. Petersburg, FL",13527051.0,13.877073603736571,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.03759549519653539
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.03421978917532256
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.016344115064302476
+30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+00001,King County,"Seattle--Tacoma, WA",48252837.0,10.089906740845901,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+40034,County of Miami-Dade ,"Miami--Fort Lauderdale, FL",34637730.0,12.23177778743868,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+40022,Metropolitan Atlanta Rapid Transit Authority,"Atlanta, GA",34330773.0,12.736242340521027,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+60056,Dallas Area Rapid Transit,"Dallas--Fort Worth--Arlington, TX",36116257.0,12.857683703671215,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+50008,Milwaukee County,"Milwaukee, WI",23263737.0,12.564448236536224,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+90014,Alameda-Contra Costa Transit District,"San Francisco--Oakland, CA",24848623.0,9.984272496038399,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+40029,Broward County Board of County Commissioners,"Miami--Fort Lauderdale, FL",20495932.0,12.245965924393385,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+90013,Santa Clara Valley Transportation Authority,"San Jose, CA",22578855.0,11.398281441374023,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+80001,Utah Transit Authority,"Salt Lake City, UT",23227097.0,12.111349086615643,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+70006,Bi-State Development Agency of the Missouri-Illinois Metropolitan District,"St. Louis, MO--IL",17600213.0,13.64626142940746,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+90146,Foothill Transit,"Los Angeles--Long Beach--Anaheim, CA",16553173.0,13.910516553865463,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+20002,Capital District Transportation Authority,"Albany--Schenectady, NY",13580732.0,12.567238346605231,any_intersection,GeoJSON any policy-date route shape intersects CBD geofence,0.0
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.39838724843051165
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.31656049548396914
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.1684111322175656
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.05826250423498181
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.03509740020590855
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.015079120354588629
+40027,Pinellas Suncoast Transit Authority,"Tampa--St. Petersburg, FL",13527051.0,13.877073603736571,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.008202099072474463
+30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+00001,King County,"Seattle--Tacoma, WA",48252837.0,10.089906740845901,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+40034,County of Miami-Dade ,"Miami--Fort Lauderdale, FL",34637730.0,12.23177778743868,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+40022,Metropolitan Atlanta Rapid Transit Authority,"Atlanta, GA",34330773.0,12.736242340521027,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+60056,Dallas Area Rapid Transit,"Dallas--Fort Worth--Arlington, TX",36116257.0,12.857683703671215,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+50008,Milwaukee County,"Milwaukee, WI",23263737.0,12.564448236536224,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+90014,Alameda-Contra Costa Transit District,"San Francisco--Oakland, CA",24848623.0,9.984272496038399,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+40029,Broward County Board of County Commissioners,"Miami--Fort Lauderdale, FL",20495932.0,12.245965924393385,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+90013,Santa Clara Valley Transportation Authority,"San Jose, CA",22578855.0,11.398281441374023,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+80001,Utah Transit Authority,"Salt Lake City, UT",23227097.0,12.111349086615643,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+70006,Bi-State Development Agency of the Missouri-Illinois Metropolitan District,"St. Louis, MO--IL",17600213.0,13.64626142940746,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+90146,Foothill Transit,"Los Angeles--Long Beach--Anaheim, CA",16553173.0,13.910516553865463,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+20002,Capital District Transportation Authority,"Albany--Schenectady, NY",13580732.0,12.567238346605231,max_share_ge_05pct,GeoJSON max shape share in CBD >= 5%,0.0
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.3809897223602246
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.32352553367353676
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.17177493351523887
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.053862582409551205
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.033475558662670886
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0195421970347423
+40027,Pinellas Suncoast Transit Authority,"Tampa--St. Petersburg, FL",13527051.0,13.877073603736571,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.016829472344035423
+30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+00001,King County,"Seattle--Tacoma, WA",48252837.0,10.089906740845901,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+40034,County of Miami-Dade ,"Miami--Fort Lauderdale, FL",34637730.0,12.23177778743868,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+40022,Metropolitan Atlanta Rapid Transit Authority,"Atlanta, GA",34330773.0,12.736242340521027,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+60056,Dallas Area Rapid Transit,"Dallas--Fort Worth--Arlington, TX",36116257.0,12.857683703671215,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+50008,Milwaukee County,"Milwaukee, WI",23263737.0,12.564448236536224,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+90014,Alameda-Contra Costa Transit District,"San Francisco--Oakland, CA",24848623.0,9.984272496038399,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+40029,Broward County Board of County Commissioners,"Miami--Fort Lauderdale, FL",20495932.0,12.245965924393385,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+90013,Santa Clara Valley Transportation Authority,"San Jose, CA",22578855.0,11.398281441374023,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+80001,Utah Transit Authority,"Salt Lake City, UT",23227097.0,12.111349086615643,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+70006,Bi-State Development Agency of the Missouri-Illinois Metropolitan District,"St. Louis, MO--IL",17600213.0,13.64626142940746,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+90146,Foothill Transit,"Los Angeles--Long Beach--Anaheim, CA",16553173.0,13.910516553865463,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+20002,Capital District Transportation Authority,"Albany--Schenectady, NY",13580732.0,12.567238346605231,max_share_ge_10pct,GeoJSON max shape share in CBD >= 10%,0.0
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.24452072432320496
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.22698926869884364
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.21773160028416677
+40027,Pinellas Suncoast Transit Authority,"Tampa--St. Petersburg, FL",13527051.0,13.877073603736571,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0913568834568551
+10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.05353923910623943
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.05298310384546827
+80001,Utah Transit Authority,"Salt Lake City, UT",23227097.0,12.111349086615643,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.046061830790882864
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.04075399378525443
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.026063355709084544
+50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+60056,Dallas Area Rapid Transit,"Dallas--Fort Worth--Arlington, TX",36116257.0,12.857683703671215,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+40034,County of Miami-Dade ,"Miami--Fort Lauderdale, FL",34637730.0,12.23177778743868,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+40022,Metropolitan Atlanta Rapid Transit Authority,"Atlanta, GA",34330773.0,12.736242340521027,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+00001,King County,"Seattle--Tacoma, WA",48252837.0,10.089906740845901,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+40029,Broward County Board of County Commissioners,"Miami--Fort Lauderdale, FL",20495932.0,12.245965924393385,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+90013,Santa Clara Valley Transportation Authority,"San Jose, CA",22578855.0,11.398281441374023,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+50008,Milwaukee County,"Milwaukee, WI",23263737.0,12.564448236536224,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+90014,Alameda-Contra Costa Transit District,"San Francisco--Oakland, CA",24848623.0,9.984272496038399,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+70006,Bi-State Development Agency of the Missouri-Illinois Metropolitan District,"St. Louis, MO--IL",17600213.0,13.64626142940746,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+90146,Foothill Transit,"Los Angeles--Long Beach--Anaheim, CA",16553173.0,13.910516553865463,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+20002,Capital District Transportation Authority,"Albany--Schenectady, NY",13580732.0,12.567238346605231,max_share_ge_25pct,GeoJSON max shape share in CBD >= 25%,0.0
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.24144304735987027
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.19049358490039275
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.14102613423892219
+80001,Utah Transit Authority,"Salt Lake City, UT",23227097.0,12.111349086615643,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.12982335047177215
+40027,Pinellas Suncoast Transit Authority,"Tampa--St. Petersburg, FL",13527051.0,13.877073603736571,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.07081770939011146
+10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.06318067786581993
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.055369250240039664
+80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.03957609553342024
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.038355383146073285
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.029914766853578096
+50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+00001,King County,"Seattle--Tacoma, WA",48252837.0,10.089906740845901,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+60056,Dallas Area Rapid Transit,"Dallas--Fort Worth--Arlington, TX",36116257.0,12.857683703671215,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+40034,County of Miami-Dade ,"Miami--Fort Lauderdale, FL",34637730.0,12.23177778743868,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+40022,Metropolitan Atlanta Rapid Transit Authority,"Atlanta, GA",34330773.0,12.736242340521027,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+40029,Broward County Board of County Commissioners,"Miami--Fort Lauderdale, FL",20495932.0,12.245965924393385,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+90013,Santa Clara Valley Transportation Authority,"San Jose, CA",22578855.0,11.398281441374023,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+50008,Milwaukee County,"Milwaukee, WI",23263737.0,12.564448236536224,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+90014,Alameda-Contra Costa Transit District,"San Francisco--Oakland, CA",24848623.0,9.984272496038399,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+70006,Bi-State Development Agency of the Missouri-Illinois Metropolitan District,"St. Louis, MO--IL",17600213.0,13.64626142940746,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+90146,Foothill Transit,"Los Angeles--Long Beach--Anaheim, CA",16553173.0,13.910516553865463,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+20002,Capital District Transportation Authority,"Albany--Schenectady, NY",13580732.0,12.567238346605231,max_share_ge_50pct,GeoJSON max shape share in CBD >= 50%,0.0
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.20136901193524068
+80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.1804133411256029
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.17541827490891987
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.1698236623041326
+80001,Utah Transit Authority,"Salt Lake City, UT",23227097.0,12.111349086615643,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.1462431626713665
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.09043765936234602
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.026052534813796404
+10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.006441439996827794
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.003800912881767263
+50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+00001,King County,"Seattle--Tacoma, WA",48252837.0,10.089906740845901,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+60056,Dallas Area Rapid Transit,"Dallas--Fort Worth--Arlington, TX",36116257.0,12.857683703671215,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+40034,County of Miami-Dade ,"Miami--Fort Lauderdale, FL",34637730.0,12.23177778743868,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+40022,Metropolitan Atlanta Rapid Transit Authority,"Atlanta, GA",34330773.0,12.736242340521027,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+90014,Alameda-Contra Costa Transit District,"San Francisco--Oakland, CA",24848623.0,9.984272496038399,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+40029,Broward County Board of County Commissioners,"Miami--Fort Lauderdale, FL",20495932.0,12.245965924393385,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+90013,Santa Clara Valley Transportation Authority,"San Jose, CA",22578855.0,11.398281441374023,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+50008,Milwaukee County,"Milwaukee, WI",23263737.0,12.564448236536224,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+90146,Foothill Transit,"Los Angeles--Long Beach--Anaheim, CA",16553173.0,13.910516553865463,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+70006,Bi-State Development Agency of the Missouri-Illinois Metropolitan District,"St. Louis, MO--IL",17600213.0,13.64626142940746,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+20002,Capital District Transportation Authority,"Albany--Schenectady, NY",13580732.0,12.567238346605231,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+40027,Pinellas Suncoast Transit Authority,"Tampa--St. Petersburg, FL",13527051.0,13.877073603736571,max_share_ge_80pct,GeoJSON max shape share in CBD >= 80%,0.0
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,old_official_source_union,Old official CBD route/speed source union,0.3899710469824417
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,old_official_source_union,Old official CBD route/speed source union,0.3070951634096142
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,old_official_source_union,Old official CBD route/speed source union,0.15888734626742462
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,old_official_source_union,Old official CBD route/speed source union,0.05588704390435915
+40027,Pinellas Suncoast Transit Authority,"Tampa--St. Petersburg, FL",13527051.0,13.877073603736571,old_official_source_union,Old official CBD route/speed source union,0.03759549519653539
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,old_official_source_union,Old official CBD route/speed source union,0.03421978917532256
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,old_official_source_union,Old official CBD route/speed source union,0.016344115064302476
+30019,Southeastern Pennsylvania Transportation Authority,"Philadelphia, PA--NJ--DE--MD",53796293.0,10.201183925896974,old_official_source_union,Old official CBD route/speed source union,0.0
+30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,old_official_source_union,Old official CBD route/speed source union,0.0
+50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,old_official_source_union,Old official CBD route/speed source union,0.0
+60008,"Metropolitan Transit Authority of Harris County, Texas ","Houston, TX",53085099.0,12.604594080734467,old_official_source_union,Old official CBD route/speed source union,0.0
+10003,Massachusetts Bay Transportation Authority,"Boston, MA--NH",31604920.0,9.215817669884162,old_official_source_union,Old official CBD route/speed source union,0.0
+00008,Tri-County Metropolitan Transportation District of Oregon,"Portland, OR--WA",29629888.0,10.963482710120111,old_official_source_union,Old official CBD route/speed source union,0.0
+80006,Denver Regional Transportation District,"Denver--Aurora, CO",36379016.0,12.006142276748882,old_official_source_union,Old official CBD route/speed source union,0.0
+00001,King County,"Seattle--Tacoma, WA",48252837.0,10.089906740845901,old_official_source_union,Old official CBD route/speed source union,0.0
+40034,County of Miami-Dade ,"Miami--Fort Lauderdale, FL",34637730.0,12.23177778743868,old_official_source_union,Old official CBD route/speed source union,0.0
+40022,Metropolitan Atlanta Rapid Transit Authority,"Atlanta, GA",34330773.0,12.736242340521027,old_official_source_union,Old official CBD route/speed source union,0.0
+50113,"Pace, the Suburban Bus Division of the Regional Transportation Authority","Chicago, IL--IN",32947741.0,14.224484110284674,old_official_source_union,Old official CBD route/speed source union,0.0
+60056,Dallas Area Rapid Transit,"Dallas--Fort Worth--Arlington, TX",36116257.0,12.857683703671215,old_official_source_union,Old official CBD route/speed source union,0.0
+60011,VIA Metropolitan Transit,"San Antonio, TX",25482403.0,13.046072347118336,old_official_source_union,Old official CBD route/speed source union,0.0
+90015,City and County of San Francisco,"San Francisco--Oakland, CA",26097706.0,7.240219011797229,old_official_source_union,Old official CBD route/speed source union,0.0
+90002,City and County of Honolulu,"Honolulu, HI",26194810.0,12.94341912933215,old_official_source_union,Old official CBD route/speed source union,0.0
+50027,Metro Transit ,"Minneapolis--St. Paul, MN",26308795.0,11.623967448336602,old_official_source_union,Old official CBD route/speed source union,0.0
+90026,San Diego Metropolitan Transit System,"San Diego, CA",28949042.0,10.886349632206064,old_official_source_union,Old official CBD route/speed source union,0.0
+30022,Pittsburgh Regional Transit,"Pittsburgh, PA",26578229.0,12.520981576332847,old_official_source_union,Old official CBD route/speed source union,0.0
+50008,Milwaukee County,"Milwaukee, WI",23263737.0,12.564448236536224,old_official_source_union,Old official CBD route/speed source union,0.0
+90014,Alameda-Contra Costa Transit District,"San Francisco--Oakland, CA",24848623.0,9.984272496038399,old_official_source_union,Old official CBD route/speed source union,0.0
+50015,The Greater Cleveland Regional Transit Authority,"Cleveland, OH",19476898.0,12.302248147160721,old_official_source_union,Old official CBD route/speed source union,0.0
+40029,Broward County Board of County Commissioners,"Miami--Fort Lauderdale, FL",20495932.0,12.245965924393385,old_official_source_union,Old official CBD route/speed source union,0.0
+90013,Santa Clara Valley Transportation Authority,"San Jose, CA",22578855.0,11.398281441374023,old_official_source_union,Old official CBD route/speed source union,0.0
+80001,Utah Transit Authority,"Salt Lake City, UT",23227097.0,12.111349086615643,old_official_source_union,Old official CBD route/speed source union,0.0
+90036,Orange County Transportation Authority,"Los Angeles--Long Beach--Anaheim, CA",24057196.0,11.532211846522939,old_official_source_union,Old official CBD route/speed source union,0.0
+70006,Bi-State Development Agency of the Missouri-Illinois Metropolitan District,"St. Louis, MO--IL",17600213.0,13.64626142940746,old_official_source_union,Old official CBD route/speed source union,0.0
+90146,Foothill Transit,"Los Angeles--Long Beach--Anaheim, CA",16553173.0,13.910516553865463,old_official_source_union,Old official CBD route/speed source union,0.0
+20002,Capital District Transportation Authority,"Albany--Schenectady, NY",13580732.0,12.567238346605231,old_official_source_union,Old official CBD route/speed source union,0.0

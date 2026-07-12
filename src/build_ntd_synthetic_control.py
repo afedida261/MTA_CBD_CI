@@ -18,6 +18,8 @@ from scipy.optimize import minimize
 ROOT = Path(__file__).resolve().parents[1]
 RAW_NTD = ROOT / "data" / "raw" / "NTD" / "May 2026 Complete Monthly Ridership (with adjustments and estimates)_260701.xlsx"
 NYC_PANEL = ROOT / "data" / "processed" / "nyc_did_panel_geojson_intersection.csv"
+ROUTE_TREATMENT = ROOT / "data" / "processed" / "nyc_route_treatment_geojson_intersection.csv"
+OFFICIAL_COMPARISON = ROOT / "outputs" / "tables" / "nyc_geojson_vs_official_cbd_comparison.csv"
 PROCESSED = ROOT / "data" / "processed"
 TABLES = ROOT / "outputs" / "tables"
 FIGURES = ROOT / "outputs" / "figures"
@@ -26,7 +28,9 @@ START_MONTH = "2023-08-01"
 END_MONTH = "2026-05-01"
 POST_MONTH = "2025-01-01"
 FIXED_ROUTE_BUS_MODES = ["MB", "RB", "TB"]
-DONOR_POOL_SIZE = 60
+DONOR_POOL_SIZE = 35  # Middle-ground cap; assess fit stability at 30 and 45 donors.
+DONOR_SENSITIVITY_SIZES = [30, 35, 45]
+THRESHOLDS = [0.05, 0.10, 0.25, 0.50, 0.80]
 
 NYC_AREA_KEYWORDS = [
     "MTA",
@@ -80,24 +84,49 @@ def read_ntd_measure(sheet_name: str, value_name: str) -> pd.DataFrame:
     return long.drop(columns=["month_label"])
 
 
-def build_nyc_network() -> pd.DataFrame:
+def load_treatment_definitions() -> pd.DataFrame:
+    treatment = pd.read_csv(ROUTE_TREATMENT)
+    treatment["route_id"] = treatment["route_id"].astype("string").str.strip().str.upper()
+    treatment["any_intersection"] = treatment["cbd_route"].astype("string").str.lower().eq("true")
+    treatment["max_share_length_in_cbd"] = pd.to_numeric(
+        treatment["max_share_length_in_cbd"], errors="coerce"
+    ).fillna(0)
+    definitions = treatment[["route_id", "any_intersection"]].copy()
+    for threshold in THRESHOLDS:
+        suffix = f"{int(threshold * 100):02d}"
+        definitions[f"max_share_ge_{suffix}pct"] = treatment["max_share_length_in_cbd"].ge(threshold)
+
+    official = pd.read_csv(OFFICIAL_COMPARISON)
+    official["route_id"] = official["route_id"].astype("string").str.strip().str.upper()
+    official["old_official_source_union"] = official["in_any_old_cbd_source"].astype("string").str.lower().eq("true")
+    return definitions.merge(
+        official[["route_id", "old_official_source_union"]], on="route_id", how="left"
+    ).fillna({"old_official_source_union": False})
+
+
+def build_nyc_network(treatment: pd.DataFrame, treatment_column: str) -> pd.DataFrame:
     panel = pd.read_csv(NYC_PANEL, parse_dates=["month"])
-    weekday_cbd = panel[(panel["day_type"] == 1) & panel["cbd_route"]].copy()
-    weekday_cbd["total_mileage"] = pd.to_numeric(
-        weekday_cbd["total_mileage"].astype(str).str.replace(",", "", regex=False), errors="coerce"
+    panel["route_id"] = panel["route_id"].astype("string").str.strip().str.upper()
+    panel = panel.merge(treatment[["route_id", treatment_column]], on="route_id", how="left", validate="many_to_one")
+    panel["treated_route"] = panel[treatment_column].fillna(False).astype(bool)
+    panel["total_mileage"] = pd.to_numeric(
+        panel["total_mileage"].astype(str).str.replace(",", "", regex=False), errors="coerce"
     )
-    weekday_cbd["total_operating_time"] = pd.to_numeric(
-        weekday_cbd["total_operating_time"].astype(str).str.replace(",", "", regex=False), errors="coerce"
+    panel["total_operating_time"] = pd.to_numeric(
+        panel["total_operating_time"].astype(str).str.replace(",", "", regex=False), errors="coerce"
     )
+    weekday_treated = panel[
+        panel["day_type"].astype(str).eq("1") & panel["treated_route"]
+    ].copy()
     nyc = (
-        weekday_cbd.groupby("month", as_index=False)[["total_mileage", "total_operating_time"]]
+        weekday_treated.groupby("month", as_index=False)[["total_mileage", "total_operating_time"]]
         .sum()
         .query("@START_MONTH <= month <= @END_MONTH")
         .sort_values("month")
     )
     nyc["average_speed"] = nyc["total_mileage"] / nyc["total_operating_time"]
     nyc["unit_id"] = "NYC_CBD_ROUTES"
-    nyc["unit_name"] = "NYC CBD-treated route network"
+    nyc["unit_name"] = "NYC treated route network"
     nyc["is_treated"] = True
     return nyc[["month", "unit_id", "unit_name", "is_treated", "average_speed"]]
 
@@ -174,7 +203,7 @@ def select_donors(ntd: pd.DataFrame) -> pd.DataFrame:
     return selected
 
 
-def fit_synthetic_control(nyc: pd.DataFrame, ntd: pd.DataFrame, selected: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+def fit_synthetic_control(nyc: pd.DataFrame, ntd: pd.DataFrame, selected: pd.DataFrame, treatment_column: str, treatment_label: str) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     donor_ids = selected["ntd_id"].tolist()
     donors = ntd[ntd["ntd_id"].isin(donor_ids)].copy()
     donors["unit_id"] = donors["ntd_id"]
@@ -224,9 +253,12 @@ def fit_synthetic_control(nyc: pd.DataFrame, ntd: pd.DataFrame, selected: pd.Dat
     summary = pd.DataFrame(
         [
             {
-                "outcome": "centered monthly average speed, mph",
-                "treated_unit": "NYC CBD-treated route network",
+                "outcome": "pre-mean-centered monthly average speed trajectory, mph",
+                "treatment_column": treatment_column,
+                "treatment_definition": treatment_label,
+                "treated_unit": "NYC treated route network",
                 "donor_pool_size": len(donor_ids),
+                "pre_months_per_donor": int((~monthly["post"]).sum()),
                 "pre_months": int((~monthly["post"]).sum()),
                 "post_months": int(monthly["post"].sum()),
                 "pre_rmspe": float(np.sqrt(np.mean(pre_gap**2))),
@@ -239,8 +271,12 @@ def fit_synthetic_control(nyc: pd.DataFrame, ntd: pd.DataFrame, selected: pd.Dat
     )
 
     weights_table = selected[["ntd_id", "Agency", "UZA Name", "pre_vrm", "mean_speed"]].copy()
+    weights_table["treatment_column"] = treatment_column
+    weights_table["treatment_definition"] = treatment_label
     weights_table["weight"] = weights
     weights_table = weights_table.sort_values("weight", ascending=False)
+    monthly["treatment_column"] = treatment_column
+    monthly["treatment_definition"] = treatment_label
     return monthly, summary, weights_table
 
 
@@ -271,25 +307,74 @@ def save_figures(monthly: pd.DataFrame) -> None:
     plt.close(fig)
 
 
+def treatment_label(treatment_column: str) -> str:
+    if treatment_column == "any_intersection":
+        return "GeoJSON any policy-date route shape intersects CBD geofence"
+    if treatment_column == "old_official_source_union":
+        return "Old official CBD route/speed source union"
+    percent = treatment_column.removeprefix("max_share_ge_").removesuffix("pct")
+    return f"GeoJSON max shape share in CBD >= {int(percent)}%"
+
+
 def main() -> None:
     PROCESSED.mkdir(parents=True, exist_ok=True)
     TABLES.mkdir(parents=True, exist_ok=True)
     FIGURES.mkdir(parents=True, exist_ok=True)
 
-    nyc = build_nyc_network()
+    treatment = load_treatment_definitions()
+    treatment_columns = ["any_intersection"] + [
+        f"max_share_ge_{int(threshold * 100):02d}pct" for threshold in THRESHOLDS
+    ] + ["old_official_source_union"]
     ntd = build_ntd_bus_speeds()
     selected = select_donors(ntd)
-    monthly, summary, weights = fit_synthetic_control(nyc, ntd, selected)
 
-    monthly.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_monthly_results.csv", index=False)
-    summary.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_summary.csv", index=False)
-    weights.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_weights.csv", index=False)
-    save_figures(monthly)
+    summaries = []
+    monthly_results = []
+    weights_results = []
+    for treatment_column in treatment_columns:
+        label = treatment_label(treatment_column)
+        nyc = build_nyc_network(treatment, treatment_column)
+        monthly, summary, weights = fit_synthetic_control(
+            nyc, ntd, selected, treatment_column, label
+        )
+        summaries.append(summary)
+        monthly_results.append(monthly)
+        weights_results.append(weights)
+        if treatment_column == "any_intersection":
+            monthly.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_monthly_results.csv", index=False)
+            summary.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_summary.csv", index=False)
+            weights.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_weights.csv", index=False)
+            save_figures(monthly)
 
-    print(summary.to_string(index=False))
-    print(weights.head(12).to_string(index=False))
+    summary_all = pd.concat(summaries, ignore_index=True)
+    monthly_all = pd.concat(monthly_results, ignore_index=True)
+    weights_all = pd.concat(weights_results, ignore_index=True)
+    summary_all.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_robustness_summary.csv", index=False)
+    monthly_all.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_robustness_monthly_results.csv", index=False)
+    weights_all.to_csv(TABLES / "nyc_cbd_ntd_synthetic_control_robustness_weights.csv", index=False)
+
+    # Fixed donor-count sensitivity for the primary treatment; this is a stability
+    # diagnostic, not a search for the donor count with the best pre-fit.
+    sensitivity = []
+    primary_nyc = build_nyc_network(treatment, "any_intersection")
+    for donor_count in DONOR_SENSITIVITY_SIZES:
+        _, sensitivity_summary, _ = fit_synthetic_control(
+            primary_nyc, ntd, selected.head(donor_count), "any_intersection",
+            treatment_label("any_intersection"),
+        )
+        sensitivity_summary["sensitivity_donor_count"] = donor_count
+        sensitivity.append(sensitivity_summary)
+    pd.concat(sensitivity, ignore_index=True).to_csv(
+        TABLES / "nyc_cbd_ntd_synthetic_control_donor_count_sensitivity.csv", index=False
+    )
+
+    print(summary_all[[
+        "treatment_column", "pre_rmspe", "post_mean_gap_mph",
+        "post_mean_treated_change_mph", "post_mean_synthetic_change_mph",
+    ]].to_string(index=False))
 
 
 if __name__ == "__main__":
     main()
+
 

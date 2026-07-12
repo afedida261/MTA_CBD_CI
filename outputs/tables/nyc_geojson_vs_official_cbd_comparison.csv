@@ -1,7 +1,6 @@
 route_id,cbd_route,geojson_cbd_relation_inferred,max_share_length_in_cbd,total_share_length_in_cbd,boroughs_in_bus_speeds,has_staten_island_rows,cbd_bus_routes_relation,in_cbd_bus_routes,cbd_bus_speeds_relations,has_cbd_segment_in_cbd_bus_speeds,in_cbd_bus_speeds,route_in_analysis_outcome,has_non_staten_island_rows,all_outcome_has_staten_island_rows,all_outcome_window_boroughs,dropped_shape_count,dropped_has_outcome,dropped_reason,in_any_old_cbd_source,comparison_flag
 B1,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B100,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
-B102,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,,False,False,True,True,False,Brooklyn,,False,,False,
 B103,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B11,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B12,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
@@ -22,7 +21,7 @@ B35,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,Fal
 B36,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B37,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B38,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
-B39,True,Crossing CBD,0.48516178296603524,0.46397440040592974,Brooklyn,False,Crossing CBD,True,CBD,True,True,True,True,False,Brooklyn,,False,,True,
+B39,True,Crossing CBD,0.48516178296603524,0.4635514125935027,Brooklyn,False,Crossing CBD,True,CBD,True,True,True,True,False,Brooklyn,,False,,True,
 B4,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B41,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B42,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
@@ -57,10 +56,10 @@ B82+,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,Fa
 B83,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B84,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
 B9,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,NON-CBD,False,True,True,True,False,Brooklyn,,False,,False,
-BM1,True,Crossing CBD,0.20577038463900416,0.16141017225687396,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
-BM2,True,Crossing CBD,0.21122765576380054,0.1668377101330796,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
-BM3,True,Crossing CBD,0.20237594955809302,0.15819122075292028,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
-BM4,True,Crossing CBD,0.21841294553550658,0.17177079827019345,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
+BM1,True,Crossing CBD,0.20577038463900416,0.16096332655193735,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
+BM2,True,Crossing CBD,0.21122765576380054,0.16991623886523108,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
+BM3,True,Crossing CBD,0.20237594955809302,0.15774909263956205,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
+BM4,True,Crossing CBD,0.21841294553550658,0.1713050575235563,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
 BM5,True,Crossing CBD,0.15684588753920253,0.14799465034261264,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
 BX1,False,Non-CBD,0.0,0.0,Bronx,False,,False,NON-CBD,False,True,True,True,False,Bronx,,False,,False,
 BX10,False,Non-CBD,0.0,0.0,Bronx,False,,False,NON-CBD,False,True,True,True,False,Bronx,,False,,False,
@@ -109,63 +108,63 @@ BX6+,False,Non-CBD,0.0,0.0,Bronx,False,,False,NON-CBD,False,True,True,True,False
 BX7,False,Non-CBD,0.0,0.0,Bronx,False,,False,NON-CBD,False,True,True,True,False,Bronx,,False,,False,
 BX8,False,Non-CBD,0.0,0.0,Bronx,False,,False,NON-CBD,False,True,True,True,False,Bronx,,False,,False,
 BX9,False,Non-CBD,0.0,0.0,Bronx,False,,False,NON-CBD,False,True,True,True,False,Bronx,,False,,False,
-BXM1,True,Crossing CBD,0.09907278335644333,0.09482568741314629,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM10,True,Crossing CBD,0.13727334370697233,0.13280013182676598,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM11,True,Crossing CBD,0.1265941630916612,0.11070364704498396,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM18,True,Crossing CBD,0.2876447898327714,0.28220466301285974,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM2,True,Crossing CBD,0.1112506956493819,0.10670386599686131,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM3,True,Crossing CBD,0.14105900296833934,0.11503528766067712,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM4,True,Crossing CBD,0.12016733111390032,0.11754957880445854,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM6,True,Crossing CBD,0.1675319946746573,0.16059987200655826,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM7,True,Crossing CBD,0.13076390234480395,0.1176012503093674,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM8,True,Crossing CBD,0.137535947912466,0.11648262643208951,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-BXM9,True,Crossing CBD,0.12502174057105697,0.1192967860414387,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
-M1,True,Crossing CBD,0.4491100420556925,0.40745660097589637,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M10,True,Crossing CBD,0.041728312880360885,0.03272769731557612,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+BXM1,True,Crossing CBD,0.09907278335644333,0.09486165362608452,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM10,True,Crossing CBD,0.13726919224695971,0.13279965766357588,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM11,True,Crossing CBD,0.1265941630659876,0.11079461953686735,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM18,True,Crossing CBD,0.28764478745428484,0.28231245644953057,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM2,True,Crossing CBD,0.11121856055661951,0.10672947767611682,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM3,True,Crossing CBD,0.14105900296833934,0.11517532086818673,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM4,True,Crossing CBD,0.12016733111390032,0.11754957917717777,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM6,True,Crossing CBD,0.1675319946746573,0.16059987178441695,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM7,True,Crossing CBD,0.13076390232507934,0.11767033993459776,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM8,True,Crossing CBD,0.137535947912466,0.11648262658565812,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+BXM9,True,Crossing CBD,0.12502174057105697,0.11986763913014681,Bronx,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Bronx,,False,,True,
+M1,True,Crossing CBD,0.44839348107485594,0.4075541636583756,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M10,True,Crossing CBD,0.041728311647080324,0.03256657144621205,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
 M100,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
-M101,True,Crossing CBD,0.5833648649502313,0.2633443628342268,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M102,True,Crossing CBD,0.5833648373819642,0.31584239717940576,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M103,True,Crossing CBD,0.5778138464956625,0.5610095621669834,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M104,True,Crossing CBD,0.24769698267197476,0.22200221685859395,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M101,True,Crossing CBD,0.5833326315176466,0.2631556682665019,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M102,True,Crossing CBD,0.5833648373819642,0.3413205255575862,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M103,True,Crossing CBD,0.577304678101891,0.5605282495917273,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M104,True,Crossing CBD,0.24769191871381288,0.22948547076864945,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
 M106,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
-M11,True,In CBD,0.8996386239128891,0.39466979592123863,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M11,True,In CBD,0.8996386226161301,0.39948502344184234,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
 M116,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
-M12,True,In CBD,0.9210026681478175,0.6581957553267044,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M12,True,In CBD,0.9210026681478175,0.6609336338341322,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
 M125,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
-M14A+,True,In CBD,1.0,0.9844489267027392,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M14D+,True,In CBD,1.0,0.9416353989149145,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M15,True,Crossing CBD,0.5976145529772676,0.5658598147651176,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M15+,True,Crossing CBD,0.602319749784076,0.5401529245564687,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M2,True,Crossing CBD,0.3139100132586491,0.2545348244218478,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M20,True,In CBD,0.9204028262228371,0.8801047396999149,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M21,True,In CBD,1.0,0.9083770301998825,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M22,True,In CBD,1.0,0.9011963346369988,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M23+,True,In CBD,0.9328312118713391,0.904817685561726,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M3,True,Crossing CBD,0.43666672052695726,0.23594877718156484,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M31,True,Crossing CBD,0.5650748420198837,0.5106593890619495,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M34+,True,In CBD,0.982865352564369,0.9204636877373201,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M34A+,True,In CBD,0.9664650096349935,0.9337351091973082,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M14A+,True,In CBD,1.0,0.9844489267027391,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M14D+,True,In CBD,1.0,0.9354490441790181,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M15,True,Crossing CBD,0.5974481178936507,0.5653202991680824,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M15+,True,Crossing CBD,0.602319746995144,0.5398039494283874,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M2,True,Crossing CBD,0.30936757108561164,0.26334333171907387,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M20,True,In CBD,0.920402826016975,0.8833935308508841,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M21,True,In CBD,1.0,0.9070385688976923,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M22,True,In CBD,0.8906379601629931,0.8877144195814931,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M23+,True,In CBD,0.9328312116336542,0.9048176862023569,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M3,True,Crossing CBD,0.4276243528221871,0.22900103431321317,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M31,True,Crossing CBD,0.5650748133681737,0.5107667539911528,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M34+,True,In CBD,0.982865352564369,0.9247503557548107,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M34A+,True,In CBD,0.9664650096349935,0.934079797342828,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
 M35,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
-M4,True,Crossing CBD,0.23694298604827313,0.1297516177306562,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M42,True,In CBD,0.9490957231828085,0.9324426167079284,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M5,True,Crossing CBD,0.3445061864490661,0.22805069861466648,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
-M50,True,In CBD,0.8327366814382995,0.8191461882270561,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M55,True,In CBD,1.0,0.9967065411054445,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
-M57,True,Crossing CBD,0.762766306651367,0.6959223418762901,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M4,True,Crossing CBD,0.23678822515083855,0.1298174013238939,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M42,True,In CBD,0.9490957202616883,0.9357058004192137,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M5,True,Crossing CBD,0.3445061864490661,0.22768183768324202,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M50,True,In CBD,0.8327366814382995,0.8223055547579669,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M55,True,In CBD,1.0,0.9967050427828997,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M57,True,Crossing CBD,0.762766306651367,0.6962469218284089,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
 M60+,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
 M66,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
-M7,True,Crossing CBD,0.365606148747226,0.3426985559627265,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
+M7,True,Crossing CBD,0.3649247347791629,0.3398965362235404,Manhattan,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Manhattan,,False,,True,
 M72,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
 M79+,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
-M8,True,In CBD,0.9846873925228129,0.9835333008403392,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M8,True,In CBD,0.9846873925228129,0.9838876298329077,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
 M86+,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
-M9,True,In CBD,0.8751816849940043,0.8505259382955139,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
+M9,True,In CBD,0.8751053425565397,0.8515224473835884,Manhattan,False,In CBD,True,CBD,True,True,True,True,False,Manhattan,,False,,True,
 M96,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
 M98,False,Non-CBD,0.0,0.0,Manhattan,False,,False,NON-CBD,False,True,True,True,False,Manhattan,,False,,False,
 Q1,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q10,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q100,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q101,True,Crossing CBD,0.06365919086444344,0.021473598564695797,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+Q101,True,Crossing CBD,0.06365919086444344,0.029661406234922943,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
 Q102,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q103,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q104,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
@@ -175,10 +174,9 @@ Q111,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,Fals
 Q112,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q113,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q114,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q115,False,Non-CBD,0.0,0.0,Queens,False,,False,,False,False,True,True,False,Queens,,False,,False,
 Q12,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q13,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q14,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q14,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q15,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q15A,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q16,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
@@ -186,7 +184,7 @@ Q17,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False
 Q18,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q19,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q2,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q20,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q20,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q20A,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q20B,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q21,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
@@ -201,7 +199,7 @@ Q29,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False
 Q3,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q30,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q31,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q32,True,Crossing CBD,0.3234473172769775,0.3122771572084968,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+Q32,True,Crossing CBD,0.3148645728552621,0.31116228098203363,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
 Q33,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q34,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q35,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
@@ -215,14 +213,14 @@ Q41,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False
 Q42,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q43,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q44+,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q45,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q45,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q46,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q47,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q48,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q49,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q5,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q50,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q51,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q51,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q52+,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q53+,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q54,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
@@ -231,9 +229,9 @@ Q56,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False
 Q58,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q59,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q6,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q60,True,Crossing CBD,0.011184041404765609,0.008737721725626691,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-Q61,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q63,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q60,True,Crossing CBD,0.01118403757544162,0.008713135138771335,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+Q61,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q63,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q64,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q65,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q66,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
@@ -242,126 +240,118 @@ Q69,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False
 Q7,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q70+,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q72,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q74,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q75,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q74,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q75,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q76,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q77,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q8,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q80,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q82,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q80,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q82,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q83,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q84,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q85,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q86,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q87,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q86,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q87,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q88,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
-Q89,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
+Q89,False,,,,,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q9,False,Non-CBD,0.0,0.0,Queens,False,,False,NON-CBD,False,True,True,True,False,Queens,,False,,False,
 Q90,False,Non-CBD,0.0,0.0,Queens,False,,False,,False,False,True,True,False,Queens,,False,,False,
 Q98,False,Non-CBD,0.0,0.0,Queens,False,,False,,False,False,True,True,False,Queens,,False,,False,
-QM1,True,Crossing CBD,0.1997933715385396,0.17000430929544216,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM10,True,Crossing CBD,0.2678097794924558,0.2493375995970864,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM11,True,Crossing CBD,0.17872242203833388,0.1640245870801252,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM12,True,Crossing CBD,0.23826080959884358,0.217854566590802,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM15,True,Crossing CBD,0.19328350783892173,0.14857194165644158,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM16,True,Crossing CBD,0.12775369794741645,0.12050278545493581,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM17,True,Crossing CBD,0.12220947707512042,0.11537319207630424,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM18,True,Crossing CBD,0.18825746975983254,0.1790414014664458,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM2,True,Crossing CBD,0.15746480795622073,0.12762741684238982,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM20,True,Crossing CBD,0.1694470805496549,0.1288891813764255,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM21,True,Crossing CBD,0.19758523680054785,0.16431182292732482,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM24,True,Crossing CBD,0.24517387818040423,0.21592507805418795,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM25,True,Crossing CBD,0.1754119759780393,0.16286880007852844,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM3,True,Crossing CBD,0.15396234604181377,0.14152833249737243,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM31,True,Crossing CBD,0.10916559878795555,0.10281948055728556,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM32,True,Crossing CBD,0.0840215408211591,0.08279248977267684,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM34,True,Crossing CBD,0.12514450522627724,0.11848400441444965,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM35,True,Crossing CBD,0.07696188407504155,0.0724894428877344,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM36,True,Crossing CBD,0.07977586248249821,0.0746942363048128,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM4,True,Crossing CBD,0.23131462371693015,0.19796621651715973,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM40,True,Crossing CBD,0.15121126899991608,0.14068061894400327,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM42,True,Crossing CBD,0.13201167801308927,0.12014705128366088,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM44,True,Crossing CBD,0.1284996793852461,0.11774346842517136,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM5,True,Crossing CBD,0.14521259311022705,0.10971360961676258,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM6,True,Crossing CBD,0.15011619254768263,0.1266174478957577,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM63,True,Crossing CBD,0.1696603159327333,0.15433347476609216,Queens,False,,False,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM64,True,Crossing CBD,0.18064143155553006,0.16515427184493098,Queens,False,,False,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM65,True,Crossing CBD,0.12886566342935823,0.11954925272567163,Queens,False,,False,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM68,True,Crossing CBD,0.18577833370502567,0.16991466848742123,Queens,False,,False,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM7,True,Crossing CBD,0.1595355927862774,0.1448429353181072,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-QM8,True,Crossing CBD,0.12314809495109864,0.09617544651208987,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-S40,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,152.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S42,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,122.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S44,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,282.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S46,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,539.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S48,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,182.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S51,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,233.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S52,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,134.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S53,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,160.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S54,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,290.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S55,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,317.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S56,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,418.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S57,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,239.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S59,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,429.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S61,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,183.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S62,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,387.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S66,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,95.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S74,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,467.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S76,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,155.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S78,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,649.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S79+,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,122.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S81,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,33.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S84,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,33.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S86,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,33.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S89,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,68.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S90,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S91,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,99.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S92,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,66.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S93,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,140.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S94,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,66.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S96,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,165.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-S98,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,99.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
-SIM1,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,103.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM10,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM11,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM15,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM1C,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM2,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM22,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM23,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM24,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM25,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM26,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM3,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM30,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,148.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM31,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM32,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM33,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM33C,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,102.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM34,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM35,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,81.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM3C,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM4,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM4C,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,111.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM4X,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,44.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM5,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM6,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM7,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM8,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM8X,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,44.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-SIM9,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,74.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
-T113,False,Non-CBD,0.0,0.0,Bronx,False,,False,,False,False,True,True,False,Bronx,,False,,False,
-T127,False,Non-CBD,0.0,0.0,Bronx,False,,False,,False,False,True,True,False,Bronx,,False,,False,
-T321,False,Non-CBD,0.0,0.0,Queens,False,,False,,False,False,True,True,False,Queens,,False,,False,
-T323,False,Non-CBD,0.0,0.0,Queens,False,,False,,False,False,True,True,False,Queens,,False,,False,
-T354,False,Non-CBD,0.0,0.0,Queens,False,,False,,False,False,True,True,False,Queens,,False,,False,
-T403,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,,False,False,True,True,False,Brooklyn,,False,,False,
-T426,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,,False,False,True,True,False,Brooklyn,,False,,False,
-T464,False,Non-CBD,0.0,0.0,Brooklyn,False,,False,,False,False,True,True,False,Brooklyn,,False,,False,
-X27,True,Crossing CBD,0.36328085602946814,0.24652149832967818,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
-X28,True,Crossing CBD,0.31606278786312464,0.21186557952904048,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
-X37,True,Crossing CBD,0.16371935914288924,0.16216747533297776,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
-X38,True,Crossing CBD,0.1520969364851593,0.13967113560495267,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
-X63,True,Crossing CBD,0.1898281140782023,0.16430091062200844,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-X64,True,Crossing CBD,0.2093520234343972,0.18377782562364328,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
-X68,True,Crossing CBD,0.20919551842783393,0.1518611461743333,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM1,True,Crossing CBD,0.1943631030956096,0.17003172323409207,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM10,True,Crossing CBD,0.2678097732734571,0.24900156971779752,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM11,True,Crossing CBD,0.17201535857294048,0.15702992614324343,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM12,True,Crossing CBD,0.2265272077024446,0.21415343430049455,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM15,True,Crossing CBD,0.19328350783892173,0.14205066086161958,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM16,True,Crossing CBD,0.12775369788782873,0.12040304649976229,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM17,True,Crossing CBD,0.12220947687090729,0.11527714229442343,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM18,True,Crossing CBD,0.18825746975983249,0.17890307089074128,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM2,True,Crossing CBD,0.15742166303176858,0.12741733110143086,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM20,True,Crossing CBD,0.16939256640814704,0.12833897043744708,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM21,True,Crossing CBD,0.19758523587369609,0.16435242544976322,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM24,True,Crossing CBD,0.22692310004384325,0.21516649369712715,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM25,True,Crossing CBD,0.1687668759754796,0.1616359603647,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM3,True,Crossing CBD,0.153962345626933,0.14152833216350677,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM31,True,Crossing CBD,0.10587263223963445,0.1027889572699268,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM32,True,Crossing CBD,0.08399651296268013,0.08304421803715482,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM34,True,Crossing CBD,0.1250846723735584,0.11847407949907497,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM35,True,Crossing CBD,0.07533349382986669,0.07247438308221386,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM36,True,Crossing CBD,0.07802756675307078,0.07468196133180466,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM4,True,Crossing CBD,0.22488216916112502,0.19817465444060314,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM40,True,Crossing CBD,0.15121126899991608,0.1398128684861924,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM42,True,Crossing CBD,0.12483775820114944,0.1178479137395444,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM44,True,Crossing CBD,0.12398853544701356,0.11770546887240467,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM5,True,Crossing CBD,0.14236286344171586,0.10947297594538513,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM6,True,Crossing CBD,0.14707276352329365,0.12659972902274957,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM63,False,,,,,False,,False,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,Old CBD source route not treated by GeoJSON main rule
+QM64,False,,,,,False,,False,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,Old CBD source route not treated by GeoJSON main rule
+QM65,False,,,,,False,,False,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,Old CBD source route not treated by GeoJSON main rule
+QM68,False,,,,,False,,False,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,Old CBD source route not treated by GeoJSON main rule
+QM7,True,Crossing CBD,0.15019832543417258,0.14344819228849678,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+QM8,True,Crossing CBD,0.11844461376932842,0.09487206715398472,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+S40,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,4.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S42,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,4.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S44,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,10.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S46,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,17.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S48,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,6.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S51,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,7.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S52,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,4.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S53,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,4.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S54,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,10.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S55,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,11.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S56,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,14.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S57,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,8.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S59,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,15.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S61,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,6.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S62,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,12.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S66,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,3.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S74,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,15.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S76,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,5.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S78,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,23.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S79+,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,4.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S81,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,1.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S84,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,1.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S86,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,1.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S89,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S90,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S91,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,3.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S92,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S93,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,5.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S94,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S96,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,5.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+S98,False,,,,,False,,False,NON-CBD,False,True,True,False,True,Staten Island,3.0,True,GeoJSON route absent from non-Staten-Island outcome window,False,Excluded from main analysis: Staten Island only
+SIM1,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,3.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM10,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM11,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM15,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM1C,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM2,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM22,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM23,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM24,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM25,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM26,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM3,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM30,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,4.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM31,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM32,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM33,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM33C,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,3.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM34,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM35,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM3C,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM4,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM4C,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,3.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM4X,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM5,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM6,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM7,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM8,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM8X,False,,,,,False,,False,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+SIM9,False,,,,,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,False,True,Staten Island,2.0,True,GeoJSON route absent from non-Staten-Island outcome window,True,Excluded from main analysis: Staten Island only
+X27,True,Crossing CBD,0.36328049369637333,0.24465121431317507,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
+X28,True,Crossing CBD,0.3126077096494618,0.2131446627451477,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
+X37,True,Crossing CBD,0.16371935914288924,0.16203110634374868,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
+X38,True,Crossing CBD,0.1514096965960328,0.1400452213946477,Brooklyn,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Brooklyn,,False,,True,
+X63,True,Crossing CBD,0.1898281064290976,0.16431902832318881,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+X64,True,Crossing CBD,0.2093520152018689,0.18377782416722915,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,
+X68,True,Crossing CBD,0.20892086544094932,0.15178318204584668,Queens,False,Crossing CBD,True,CBD; NON-CBD,True,True,True,True,False,Queens,,False,,True,

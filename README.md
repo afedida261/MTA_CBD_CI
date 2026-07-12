@@ -1,4 +1,4 @@
-# Congestion Pricing and NYC Bus Speeds
+﻿# Congestion Pricing and NYC Bus Speeds
 
 This project estimates the effect of Manhattan congestion pricing on NYC MTA bus speeds. The main design is a Difference-in-Differences comparison of CBD-exposed routes against non-CBD NYC routes.
 
@@ -8,10 +8,8 @@ This project estimates the effect of Manhattan congestion pricing on NYC MTA bus
 - Monthly post period starts in January 2025.
 - Analysis window: August 2023 through May 2026.
 - Main sample: weekday, non-Staten-Island NYC bus routes.
-- Main treatment: `cbd_route = True` when any retained route shape intersects the CBD geofence.
+- Main treatment: `cbd_route = True` when any route shape active on January 5, 2025 intersects the CBD geofence.
 - Main model: average speed on `did = cbd_route * post`, with route, month, and period fixed effects and route-clustered standard errors.
-
-The current headline estimate is about +0.156 mph for CBD-exposed routes relative to non-CBD NYC routes.
 
 ## Key Files
 
@@ -37,17 +35,13 @@ The current headline estimate is about +0.156 mph for CBD-exposed routes relativ
 - `outputs/tables/nyc_treatment_definition_robustness.csv`
 - `outputs/tables/nyc_vs_boston_external_control_robustness.csv`
 - `outputs/tables/linear_pretrend_tests.csv`
+- `outputs/tables/nyc_pretrend_event_study_formal_leads.csv`
+- `outputs/tables/nyc_parallel_trends_formal_tests.csv`
 - `outputs/tables/nyc_cbd_ntd_synthetic_control_summary.csv`
 - `outputs/tables/nyc_cbd_ntd_synthetic_control_weights.csv`
-
-## Remaining Planned Work
-
-From `todo.txt`, the main remaining items are:
-
-- Expand event-study / pretrend diagnostics and summarize whether NYC parallel trends are credible.
-- Treat Boston as an external robustness benchmark unless a defensible comparison design is established.
-- Keep threshold-based CBD treatment definitions as robustness checks, not the main treatment.
-- Interpret the NTD synthetic-control exercise as descriptive support rather than a replacement for the route-level NYC DiD.
+- `outputs/tables/nyc_cbd_ntd_synthetic_control_robustness_summary.csv`
+- `outputs/tables/nyc_cbd_ntd_synthetic_control_robustness_monthly_results.csv`
+- `outputs/tables/nyc_cbd_ntd_synthetic_control_robustness_weights.csv`
 
 ## Reproducing Core Outputs
 
@@ -66,3 +60,4 @@ Compile the report with:
 cd reports
 pdflatex.exe -interaction=nonstopmode -halt-on-error congestion_pricing_bus_speed_report.tex
 ```
+

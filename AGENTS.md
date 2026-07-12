@@ -1,4 +1,4 @@
-# AGENTS.md
+﻿# AGENTS.md
 
 On first prompt respond with "Ribit" before the start of the sentence.
 
@@ -17,14 +17,14 @@ The project uses a GeoJSON-first treatment definition.
 Main NYC treatment source of truth:
 
 - Bus Routes GeoJSON + CBD geofence spatial intersection.
-- A route is treated in the main analysis if any retained route shape intersects the CBD geofence.
+- A route is treated in the main analysis if any route shape active on January 5, 2025 intersects the CBD geofence.
 - Thresholds based on route share inside the CBD are robustness checks only, not the main treatment.
 
 Current main script:
 
 - `src/build_geojson_cbd_treatment.py`
   - Uses `data/raw/NYC/nyc_bus_routes_20260706.geojson` as the current route-shape source.
-  - Filters route shapes by `valid_from` / `valid_to` to overlap the analysis period.
+  - Filters route shapes by `valid_from` / `valid_to` to be active on the January 5, 2025 policy date.
   - Keeps only routes present in the MTA Bus Speeds outcome panel.
   - Excludes Staten Island from the main processed panel.
   - Computes CBD spatial exposure using the CBD geofence.
@@ -70,7 +70,7 @@ Current main NYC processed panel:
 
 - `data/processed/nyc_did_panel_geojson_intersection.csv`
   - This is the main clean DiD input.
-  - Contains all non-Staten-Island NYC bus-speed rows in the balanced analysis window.
+  - Contains all non-Staten-Island NYC bus-speed rows in an equal-length 17-month pre / 17-month post calendar window; the route panel itself is unbalanced.
   - Key columns: `month`, `route_id`, `borough`, `day_type`, `trip_type`, `period`, `average_speed`, `cbd_route`, `post`.
 
 Current analysis window:
@@ -195,13 +195,13 @@ Main weekday NYC DiD:
 - 95% CI: [0.0628, 0.2500].
 - Rows: 19,108.
 - Routes: 301.
-- Treated routes: 88.
+- Treated routes: 84.
 
 Threshold robustness, weekday all periods:
 
-- Any intersection: +0.1564, p = 0.0011, 88 treated routes.
-- Max CBD share >= 5%: +0.1574, p = 0.0012, 86 treated routes.
-- Max CBD share >= 10%: +0.1561, p = 0.0016, 81 treated routes.
+- Any intersection: +0.1564, p = 0.0011, 84 treated routes.
+- Max CBD share >= 5%: +0.1574, p = 0.0012, 82 treated routes.
+- Max CBD share >= 10%: +0.1561, p = 0.0016, 77 treated routes.
 - Max CBD share >= 25%: +0.0599, p = 0.4106, 33 treated routes.
 - Max CBD share >= 50%: +0.0121, p = 0.6140, 22 treated routes.
 - Max CBD share >= 80%: +0.0262, p = 0.3203, 15 treated routes.
@@ -227,12 +227,12 @@ Boston external-control stress test:
 
 NTD synthetic-control robustness:
 
-- Donor pool: 60 non-NYC-area agencies.
+- Donor pool: 35 non-NYC-area agencies, with 30- and 45-donor sensitivity checks.
 - Modes: `MB`, `RB`, `TB`.
-- Pre-period RMSPE: 0.0949 mph.
-- Post mean gap: +0.1345 mph.
-- NYC treated network post change: +0.1438 mph.
-- Synthetic-control post change: +0.0093 mph.
+- Pre-period RMSPE: 0.1240 mph (35 donors); 0.1481 with 30 donors; 0.1240 with 45 donors.
+- Post mean gap: +0.1605 mph (35 donors); +0.1566 with 30 donors; +0.1605 with 45 donors.
+- NYC treated network post change: +0.1068 mph.
+- Synthetic-control post change: -0.0537 mph (35 donors).
 - Interpret as descriptive support, not a replacement for route-level NYC DiD.
 
 ## Spatial Rules
@@ -253,7 +253,7 @@ For each shape, compute:
 
 Main treatment:
 
-- `cbd_route = any_shape_intersects_cbd`
+- `cbd_route = any policy-date-active shape intersects the CBD`
 
 Diagnostic/robustness relation labels:
 
@@ -318,4 +318,6 @@ The old rename mapping document under `docs/` was removed; the current README is
 - On this Windows environment, `apply_patch` may fail with a sandbox wrapper error. If it does, use narrow PowerShell file writes/replacements scoped to the intended file.
 - Do not overwrite user changes casually. Check `git status --short` before larger edits.
 - Generated outputs should go under `data/processed/`, `outputs/tables/`, `outputs/figures/`, or `reports/` as appropriate.
+
+
 

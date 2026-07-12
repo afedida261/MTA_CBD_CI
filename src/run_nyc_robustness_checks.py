@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 
@@ -55,6 +55,9 @@ def load_treatment_definitions() -> pd.DataFrame:
         how="left",
     )
     definitions["old_official_source_union"] = definitions["old_official_source_union"].fillna(False)
+    definitions["old_official_identical_to_main"] = definitions["old_official_source_union"].eq(
+        definitions["any_intersection"]
+    )
     return definitions
 
 
@@ -79,7 +82,7 @@ def formula_for(data: pd.DataFrame) -> str:
 
 def estimate_did(data: pd.DataFrame, treatment_column: str) -> dict[str, float | int | str]:
     df = data.copy()
-    df["treated"] = df[treatment_column].astype(bool)
+    df["treated"] = df[treatment_column].fillna(False).astype(bool)
     df["did"] = df["treated"].astype(int) * df["post"].astype(int)
 
     treated_routes = int(df.loc[df["treated"], "route_id"].nunique())
@@ -115,7 +118,7 @@ def estimate_did(data: pd.DataFrame, treatment_column: str) -> dict[str, float |
 
 def treatment_label(column: str) -> str:
     if column == "any_intersection":
-        return "GeoJSON any retained route shape intersects CBD"
+        return "GeoJSON any policy-date route shape intersects CBD"
     if column == "old_official_source_union":
         return "Old official CBD route/speed source union"
     percent = column.removeprefix("max_share_ge_").removesuffix("pct")
@@ -127,6 +130,10 @@ def main() -> None:
     panel = load_panel()
     definitions = load_treatment_definitions()
     panel = panel.merge(definitions, on="route_id", how="left", validate="many_to_one")
+    old_official_identical = bool(
+        panel[["route_id", "old_official_identical_to_main"]]
+        .drop_duplicates("route_id")["old_official_identical_to_main"].all()
+    )
 
     treatment_columns = ["any_intersection"] + [
         f"max_share_ge_{int(threshold * 100):02d}pct" for threshold in THRESHOLDS
@@ -141,6 +148,10 @@ def main() -> None:
                     "sample": sample_name,
                     "treatment_column": treatment_column,
                     "treatment_definition": treatment_label(treatment_column),
+                    "independent_treatment_check": not (
+                        treatment_column == "old_official_source_union"
+                        and old_official_identical
+                    ),
                     **result,
                 }
             )
@@ -151,6 +162,11 @@ def main() -> None:
     print("NYC robustness checks complete")
     print(f"Rows written: {len(results)}")
     print(f"Wrote {ROBUSTNESS_OUTPUT}")
+    if old_official_identical:
+        print(
+            "Old official-source union is identical to the main treatment in the retained "
+            "sample; its repeated estimate is mechanical, not independent robustness evidence."
+        )
     print(
         results.loc[
             results["sample"].eq("weekday_all_periods"),
@@ -161,3 +177,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
