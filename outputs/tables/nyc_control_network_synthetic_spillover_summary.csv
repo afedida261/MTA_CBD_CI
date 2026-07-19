@@ -1,0 +1,2 @@
+comparison,control_routes,donor_pool_size,pre_rmspe,post_mean_gap_mph,post_mean_control_change_mph,post_mean_synthetic_change_mph
+NYC common-support control-route network vs synthetic NTD agencies,182,35,0.07868235431628011,0.12206720265397608,0.036874124231605,-0.08519307842237109

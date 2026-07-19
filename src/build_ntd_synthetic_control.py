@@ -14,6 +14,11 @@ import numpy as np
 import pandas as pd
 from scipy.optimize import minimize
 
+try:
+    from .nyc_common_support import compute_common_support
+except ImportError:
+    from nyc_common_support import compute_common_support
+
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_NTD = ROOT / "data" / "raw" / "NTD" / "May 2026 Complete Monthly Ridership (with adjustments and estimates)_260701.xlsx"
@@ -34,7 +39,6 @@ THRESHOLDS = [0.05, 0.10, 0.25, 0.50, 0.80]
 
 NYC_AREA_KEYWORDS = [
     "MTA",
-    "METROPOLITAN TRANSPORTATION AUTHORITY",
     "NEW YORK",
     "NJ TRANSIT",
     "NEW JERSEY",
@@ -104,9 +108,15 @@ def load_treatment_definitions() -> pd.DataFrame:
     ).fillna({"old_official_source_union": False})
 
 
-def build_nyc_network(treatment: pd.DataFrame, treatment_column: str) -> pd.DataFrame:
-    panel = pd.read_csv(NYC_PANEL, parse_dates=["month"])
+def build_nyc_network(
+    panel: pd.DataFrame,
+    treatment: pd.DataFrame,
+    treatment_column: str,
+    common_support_routes: set[str],
+) -> pd.DataFrame:
+    panel = panel.copy()
     panel["route_id"] = panel["route_id"].astype("string").str.strip().str.upper()
+    panel = panel.loc[panel["route_id"].isin(common_support_routes)].copy()
     panel = panel.merge(treatment[["route_id", treatment_column]], on="route_id", how="left", validate="many_to_one")
     panel["treated_route"] = panel[treatment_column].fillna(False).astype(bool)
     panel["total_mileage"] = pd.to_numeric(
@@ -128,6 +138,7 @@ def build_nyc_network(treatment: pd.DataFrame, treatment_column: str) -> pd.Data
     nyc["unit_id"] = "NYC_CBD_ROUTES"
     nyc["unit_name"] = "NYC treated route network"
     nyc["is_treated"] = True
+    nyc.attrs["treated_route_count"] = int(weekday_treated["route_id"].nunique())
     return nyc[["month", "unit_id", "unit_name", "is_treated", "average_speed"]]
 
 
@@ -204,6 +215,7 @@ def select_donors(ntd: pd.DataFrame) -> pd.DataFrame:
 
 
 def fit_synthetic_control(nyc: pd.DataFrame, ntd: pd.DataFrame, selected: pd.DataFrame, treatment_column: str, treatment_label: str) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    treated_route_count = nyc.attrs.get("treated_route_count", np.nan)
     donor_ids = selected["ntd_id"].tolist()
     donors = ntd[ntd["ntd_id"].isin(donor_ids)].copy()
     donors["unit_id"] = donors["ntd_id"]
@@ -224,7 +236,7 @@ def fit_synthetic_control(nyc: pd.DataFrame, ntd: pd.DataFrame, selected: pd.Dat
 
     def objective(weights: np.ndarray) -> float:
         residual = y_pre - x_pre @ weights
-        return float(residual @ residual)
+        return float(np.mean(residual**2))
 
     n = len(donor_ids)
     initial = np.repeat(1 / n, n)
@@ -257,6 +269,7 @@ def fit_synthetic_control(nyc: pd.DataFrame, ntd: pd.DataFrame, selected: pd.Dat
                 "treatment_column": treatment_column,
                 "treatment_definition": treatment_label,
                 "treated_unit": "NYC treated route network",
+                "treated_routes": treated_route_count,
                 "donor_pool_size": len(donor_ids),
                 "pre_months_per_donor": int((~monthly["post"]).sum()),
                 "pre_months": int((~monthly["post"]).sum()),
@@ -322,9 +335,24 @@ def main() -> None:
     FIGURES.mkdir(parents=True, exist_ok=True)
 
     treatment = load_treatment_definitions()
+    panel = pd.read_csv(NYC_PANEL, parse_dates=["month"])
+    panel["route_id"] = panel["route_id"].astype("string").str.strip().str.upper()
+    support_audit = compute_common_support(panel)
+    common_support_routes = set(
+        support_audit.loc[support_audit["in_common_support"], "route_id"]
+    )
+    support_definitions = treatment.loc[
+        treatment["route_id"].isin(common_support_routes),
+        ["route_id", "any_intersection", "old_official_source_union"],
+    ]
+    old_official_identical = support_definitions["any_intersection"].equals(
+        support_definitions["old_official_source_union"]
+    )
     treatment_columns = ["any_intersection"] + [
         f"max_share_ge_{int(threshold * 100):02d}pct" for threshold in THRESHOLDS
-    ] + ["old_official_source_union"]
+    ]
+    if not old_official_identical:
+        treatment_columns.append("old_official_source_union")
     ntd = build_ntd_bus_speeds()
     selected = select_donors(ntd)
 
@@ -333,7 +361,7 @@ def main() -> None:
     weights_results = []
     for treatment_column in treatment_columns:
         label = treatment_label(treatment_column)
-        nyc = build_nyc_network(treatment, treatment_column)
+        nyc = build_nyc_network(panel, treatment, treatment_column, common_support_routes)
         monthly, summary, weights = fit_synthetic_control(
             nyc, ntd, selected, treatment_column, label
         )
@@ -356,7 +384,7 @@ def main() -> None:
     # Fixed donor-count sensitivity for the primary treatment; this is a stability
     # diagnostic, not a search for the donor count with the best pre-fit.
     sensitivity = []
-    primary_nyc = build_nyc_network(treatment, "any_intersection")
+    primary_nyc = build_nyc_network(panel, treatment, "any_intersection", common_support_routes)
     for donor_count in DONOR_SENSITIVITY_SIZES:
         _, sensitivity_summary, _ = fit_synthetic_control(
             primary_nyc, ntd, selected.head(donor_count), "any_intersection",
@@ -369,12 +397,16 @@ def main() -> None:
     )
 
     print(summary_all[[
-        "treatment_column", "pre_rmspe", "post_mean_gap_mph",
+        "treatment_column", "treated_routes", "pre_rmspe", "post_mean_gap_mph",
         "post_mean_treated_change_mph", "post_mean_synthetic_change_mph",
     ]].to_string(index=False))
+    if old_official_identical:
+        print(
+            "Old official-source union is identical to any intersection in the common-support "
+            "sample; it was excluded as a mechanical duplicate."
+        )
 
 
 if __name__ == "__main__":
     main()
-
 

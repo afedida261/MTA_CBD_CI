@@ -1,4 +1,4 @@
-﻿# AGENTS.md
+# AGENTS.md
 
 On first prompt respond with "Ribit" before the start of the sentence.
 
@@ -30,21 +30,27 @@ Current main script:
   - Computes CBD spatial exposure using the CBD geofence.
   - Compares GeoJSON treatment against old official CBD sources for auditing only.
 
-Current main notebook:
+Current primary notebook:
+
+- `notebooks/nyc_congestion_pricing_full_analysis.ipynb`
+  - Consolidates the main NYC DiD, assumption diagnostics, robustness checks, Boston stress test, and NTD synthetic control into one organized analysis.
+  - Is reproducibly assembled by `scripts/build_full_analysis_notebook.py` from the three source notebooks below.
+
+Main NYC DiD source notebook:
 
 - `notebooks/geojson_cbd_did.ipynb`
   - Loads the clean GeoJSON-derived panel.
   - Runs EDA.
   - Estimates DiD with route FE, month FE, period FE, and route-clustered standard errors.
 
-Current robustness notebook:
+Current robustness source notebook:
 
 - `notebooks/nyc_robustness_and_boston_comparison.ipynb`
   - Formalizes threshold treatment robustness.
   - Adds a Boston external-control stress test using `data/processed/boston_bus_speeds_monthly.csv`.
   - Produces event-study/pretrend diagnostics for NYC and Boston comparisons.
 
-Current synthetic-control notebook/script:
+Current synthetic-control source notebook/script:
 
 - `notebooks/nyc_cbd_ntd_synthetic_control.ipynb`
   - Treats original GeoJSON CBD-exposed routes as the NYC CBD network.

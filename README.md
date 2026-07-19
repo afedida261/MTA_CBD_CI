@@ -1,4 +1,4 @@
-﻿# Congestion Pricing and NYC Bus Speeds
+# Congestion Pricing and NYC Bus Speeds
 
 This project estimates the effect of Manhattan congestion pricing on NYC MTA bus speeds. The main design is a Difference-in-Differences comparison of CBD-exposed routes against non-CBD NYC routes.
 
@@ -17,9 +17,11 @@ This project estimates the effect of Manhattan congestion pricing on NYC MTA bus
 - `src/run_nyc_robustness_checks.py`: runs threshold, sample, official-source, and Boston robustness checks.
 - `src/build_boston_bus_speed_panel.py`: builds the processed Boston monthly bus-speed panel.
 - `src/build_ntd_synthetic_control.py`: builds the NTD agency-level synthetic-control robustness exercise.
-- `notebooks/geojson_cbd_did.ipynb`: main NYC DiD notebook.
-- `notebooks/nyc_robustness_and_boston_comparison.ipynb`: threshold robustness and Boston external-control checks.
-- `notebooks/nyc_cbd_ntd_synthetic_control.ipynb`: NTD synthetic-control robustness notebook.
+- `notebooks/nyc_congestion_pricing_full_analysis.ipynb`: primary all-in-one analysis notebook, organized from the main NYC DiD through robustness and NTD synthetic control.
+- `notebooks/geojson_cbd_did.ipynb`: source notebook for the main NYC DiD analysis.
+- `notebooks/nyc_robustness_and_boston_comparison.ipynb`: source notebook for threshold, sample, and Boston robustness checks.
+- `notebooks/nyc_cbd_ntd_synthetic_control.ipynb`: source notebook for the NTD synthetic-control robustness exercise.
+- `scripts/build_full_analysis_notebook.py`: reproducibly rebuilds the all-in-one notebook from the three source notebooks.
 - `reports/congestion_pricing_bus_speed_report.tex`: concise LaTeX report.
 - `reports/congestion_pricing_bus_speed_report.pdf`: compiled report.
 
@@ -52,6 +54,7 @@ Use the project virtual environment when possible:
 .venv\Scripts\python.exe src\run_nyc_robustness_checks.py
 .venv\Scripts\python.exe src\build_boston_bus_speed_panel.py
 .venv\Scripts\python.exe src\build_ntd_synthetic_control.py
+.venv\Scripts\python.exe scripts\build_full_analysis_notebook.py
 ```
 
 Compile the report with:

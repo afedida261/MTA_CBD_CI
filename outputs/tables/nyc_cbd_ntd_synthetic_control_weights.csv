@@ -1,11 +1,11 @@
 ntd_id,Agency,UZA Name,pre_vrm,mean_speed,weight
-50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,0.4263769048434438
-60048,Capital Metropolitan Transportation Authority,"Austin, TX",20467320.0,11.121250941587036,0.352262095591551
-90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,0.10564212829586148
-40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,0.03791154166213671
-90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,0.03624187325819251
-30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,0.024939308697495433
-50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,0.016626147651319173
+50016,Central Ohio Transit Authority,"Columbus, OH",15290540.0,12.132274838677102,0.4202366906175671
+60048,Capital Metropolitan Transportation Authority,"Austin, TX",20467320.0,11.121250941587036,0.35451590307108827
+90045,Regional Transportation Commission of Southern Nevada,"Las Vegas--Henderson--Paradise, NV",26120165.0,12.430849249550063,0.10647366373028198
+40035,Central Florida Regional Transportation Authority,"Orlando, FL",22750247.0,13.438463005820614,0.038396901466401505
+90136,Regional Public Transportation Authority,"Phoenix--Mesa--Scottsdale, AZ",16927921.0,12.121770077555365,0.03659237965583794
+30068,"Fairfax County, VA","Washington--Arlington, DC--VA--MD",15766721.0,13.398154383219193,0.02707452749265228
+50012,Southwest Ohio Regional Transit Authority,"Cincinnati, OH--KY",16043391.0,13.542988647694752,0.016709933966171035
 30030,Washington Metropolitan Area Transit Authority,"Washington--Arlington, DC--VA--MD",54734133.0,9.719217502587046,0.0
 50066,Chicago Transit Authority,"Chicago, IL--IN",68740740.0,9.09251292194554,0.0
 90154,Los Angeles County Metropolitan Transportation Authority ,"Los Angeles--Long Beach--Anaheim, CA",100590040.0,10.21734045540516,0.0

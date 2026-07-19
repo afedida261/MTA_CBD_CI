@@ -1,2 +1,2 @@
-outcome,treated_unit,donor_pool_size,pre_months,post_months,pre_rmspe,post_mean_gap_mph,post_mean_treated_change_mph,post_mean_synthetic_change_mph,bus_modes
-"centered monthly average speed, mph",NYC CBD-treated route network,35,17,17,0.122260519009794,0.1412532333628865,0.10679131759220795,-0.034461915770678565,"MB,RB,TB"
+outcome,treated_unit,treated_routes,donor_pool_size,pre_months,post_months,pre_rmspe,post_mean_gap_mph,post_mean_treated_change_mph,post_mean_synthetic_change_mph,bus_modes
+"centered monthly average speed, mph",NYC CBD-treated route network,81,35,17,17,0.12085113111123459,0.13756349248751876,0.1033256706055267,-0.03423782188199206,"MB,RB,TB"
