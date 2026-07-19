@@ -162,6 +162,9 @@ def build_shape_audit(routes: gpd.GeoDataFrame, cbd: gpd.GeoDataFrame) -> gpd.Ge
 
     routes_projected["intersects_cbd"] = routes_projected.geometry.intersects(cbd_union)
     routes_projected["within_cbd"] = routes_projected.geometry.within(cbd_union)
+    routes_projected["distance_to_cbd_km"] = (
+        routes_projected.geometry.distance(cbd_union) * 0.3048 / 1_000
+    )
     routes_projected["shape_length_total"] = routes_projected.geometry.length
     routes_projected["shape_length_in_cbd"] = routes_projected.geometry.intersection(cbd_union).length
     routes_projected["share_length_in_cbd"] = (
@@ -183,6 +186,7 @@ def build_shape_audit(routes: gpd.GeoDataFrame, cbd: gpd.GeoDataFrame) -> gpd.Ge
         "in_effect",
         "intersects_cbd",
         "within_cbd",
+        "distance_to_cbd_km",
         "shape_length_total",
         "shape_length_in_cbd",
         "share_length_in_cbd",
@@ -215,6 +219,7 @@ def build_route_treatment(
             any_shape_intersects_cbd=("intersects_cbd", "any"),
             any_shape_within_cbd=("within_cbd", "any"),
             any_high_share_shape_in_cbd=("high_share_in_cbd", "any"),
+            distance_to_cbd_km=("distance_to_cbd_km", "min"),
             max_share_length_in_cbd=("share_length_in_cbd", "max"),
             total_length_in_cbd=("shape_length_in_cbd", "sum"),
             total_shape_length=("shape_length_total", "sum"),
@@ -242,6 +247,7 @@ def build_route_treatment(
         "any_shape_intersects_cbd",
         "any_shape_within_cbd",
         "any_high_share_shape_in_cbd",
+        "distance_to_cbd_km",
         "max_share_length_in_cbd",
         "total_share_length_in_cbd",
         "total_length_in_cbd",
@@ -389,6 +395,7 @@ def build_panel(
         "any_shape_intersects_cbd",
         "any_shape_within_cbd",
         "any_high_share_shape_in_cbd",
+        "distance_to_cbd_km",
         "max_share_length_in_cbd",
         "total_share_length_in_cbd",
         "number_of_shapes",
@@ -397,7 +404,12 @@ def build_panel(
     combined["cbd_route"] = combined["cbd_route"].where(combined["cbd_route"].notna(), False).astype(bool)
     for column in ["any_shape_intersects_cbd", "any_shape_within_cbd", "any_high_share_shape_in_cbd"]:
         combined[column] = combined[column].where(combined[column].notna(), False).astype(bool)
-    for column in ["max_share_length_in_cbd", "total_share_length_in_cbd", "number_of_shapes"]:
+    for column in [
+        "distance_to_cbd_km",
+        "max_share_length_in_cbd",
+        "total_share_length_in_cbd",
+        "number_of_shapes",
+    ]:
         combined[column] = pd.to_numeric(combined[column], errors="coerce").fillna(0)
     combined["geojson_cbd_relation_inferred"] = combined[
         "geojson_cbd_relation_inferred"
